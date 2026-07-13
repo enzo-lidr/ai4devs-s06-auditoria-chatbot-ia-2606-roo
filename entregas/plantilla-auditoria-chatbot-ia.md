@@ -1,7 +1,5 @@
 # Auditoría de privacidad, seguridad y cumplimiento — Chatbot de atención al cliente
 
-> Plantilla opcional. Puedes reorganizarla como quieras, siempre que el documento cubra las tres partes del ejercicio.
-
 **Autor/a:** _tu nombre_
 **Fecha:** _AAAA-MM-DD_
 
