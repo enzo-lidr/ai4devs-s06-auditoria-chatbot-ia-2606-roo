@@ -157,3 +157,13 @@ python3 bonus_presidio_demo.py
 ```
 
 El script completo (`bonus_presidio_demo.py`) y la salida real de la ejecución (`bonus_presidio_output.txt`) están incluidos junto a este documento.
+
+### Política de uso de IA generativa para empleados
+ 
+Cinco reglas para el uso de herramientas de IA generativa (ChatGPT, Claude, Copilot y similares) por parte del personal del banco, más allá del chatbot de atención al cliente auditado en este documento:
+ 
+1. **Nunca pegar datos reales de clientes en herramientas de IA generativa externas.** Ningún empleado debe copiar DNI/CUIT, saldos, historial crediticio, datos biométricos o cualquier PII real de un cliente en un prompt de ChatGPT, Claude u otra herramienta pública, aunque sea para "redactar más rápido" un email o resumir un caso. Si se necesita ejemplificar, usar siempre datos ficticios (como los tres mensajes de prueba del bonus de Presidio).
+2. **Código y documentación interna del banco solo en herramientas con acuerdo de confidencialidad vigente.** Código propietario, arquitectura de sistemas, credenciales, o documentación de procesos internos solo puede compartirse con proveedores de IA que tengan un Data Processing Agreement (DPA) firmado con el banco y que garanticen que esos datos no se usan para reentrenar sus modelos.
+3. **Ninguna decisión que afecte a un cliente (crédito, reclamo, bloqueo de cuenta) se toma solo con la sugerencia de una IA.** El output de cualquier herramienta de IA generativa usada por un empleado es un borrador o una sugerencia, nunca una decisión final — siempre requiere revisión y aprobación humana antes de comunicarse o ejecutarse, en línea con el derecho a intervención humana del Art. 22 GDPR ya aplicado al chatbot.
+4. **Todo uso de IA generativa que procese datos personales de clientes debe pasar primero por el gateway de tokenización del banco**, el mismo mecanismo descripto en la Parte 1 de esta auditoría. No se autoriza ningún flujo de trabajo que envíe datos de clientes en texto plano a un proveedor de IA externo, sea el chatbot de atención o una herramienta usada internamente por un empleado.
+5. **Todo nuevo caso de uso de IA generativa debe clasificarse contra el EU AI Act antes de ponerse en producción.** Ningún equipo puede lanzar un asistente, automatización o integración de IA sin pasar primero por el mismo ejercicio de clasificación de riesgo (Parte 1 de este documento) y, si aplica, registrar el sistema según corresponda — evitando que aparezcan sistemas de alto riesgo "informales" sin la supervisión de compliance.
