@@ -1,0 +1,27 @@
+==========================================================================================
+
+--- Mensaje 1 ---
+ANTES : Hola, soy Marcela Fernández, mi DNI es 28.451.902. Quería saber por qué no me llegó el resumen de mi tarjeta terminada en 4532 a mi mail marcela.fernandez88@gmail.com
+DESPUÉS: Hola, soy <PERSON>, mi DNI es 28.451.902. <PERSON> saber por qué no me llegó el resumen de mi tarjeta terminada en 4532 a mi mail <EMAIL_ADDRESS>
+Entidades detectadas:
+  - EMAIL_ADDRESS        score=1.00  →  'marcela.fernandez88@gmail.com'
+  - PERSON               score=0.85  →  'Marcela Fernández'
+  - PERSON               score=0.85  →  'Quería'
+  - URL                  score=0.50  →  'gmail.com'
+
+--- Mensaje 2 ---
+ANTES : Buenas, necesito cambiar mi número de teléfono registrado, ahora es 011-4567-8932. Mi cuenta es la 0170123-40000012345678 y vivo en Av. Rivadavia 4521, CABA.
+DESPUÉS: Buenas, necesito cambiar mi número de teléfono registrado, ahora es <PHONE_NUMBER>. Mi cuenta es la 0170123-40000012345678 y vivo en <LOCATION> 4521, <LOCATION>.
+Entidades detectadas:
+  - LOCATION             score=0.85  →  'Av. Rivadavia'
+  - LOCATION             score=0.85  →  'CABA'
+  - PHONE_NUMBER         score=0.40  →  '011-4567-8932'
+
+--- Mensaje 3 ---
+ANTES : Hola, hace un mes pedí la preaprobación de un préstamo, me llamo Julián Ibarra, nací el 14/03/1985 y mi CUIT es 20-31245678-9, ¿tienen novedades?
+DESPUÉS: Hola, hace un mes pedí la preaprobación de un préstamo, me llamo <PERSON>, nací el <DATE_TIME> y mi CUIT es 20-31245678-9, ¿tienen novedades?
+Entidades detectadas:
+  - PERSON               score=0.85  →  'Julián Ibarra'
+  - DATE_TIME            score=0.60  →  '14/03/1985'
+
+==========================================================================================
