@@ -3,6 +3,18 @@
 Thumbs.db
 .idea/
 .vscode/
+*.swp
+
+# Variables de entorno y secretos — nunca subir
+.env
+.env.*
+!.env.example
+
+# Dependencias (bonus con Node, si aplica)
+node_modules/
+
+# Notas locales de trabajo (no forman parte del entregable)
+CLAUDE.md
 
 # Python (bonus Presidio)
 .venv/
