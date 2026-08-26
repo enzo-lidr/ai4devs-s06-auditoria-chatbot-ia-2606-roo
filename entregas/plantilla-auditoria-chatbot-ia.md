@@ -2,17 +2,16 @@
 
 > Plantilla opcional. Puedes reorganizarla como quieras, siempre que el documento cubra las tres partes del ejercicio.
 
-**Autora:** Tatiana Camelo
-
-**Fecha:** _2026-07-14_
+**Autor/a:** _tu nombre_
+**Fecha:** _AAAA-MM-DD_
 
 ---
 
 ## Paso 0 · Sector elegido
 
-**Sector:** _e-commerce_
+**Sector:** _e-commerce | banca | salud | educación | RRHH_
 
-_Empresa de e-commerce de ropas. El chatbot puede acceder a informaciones de tracking de pedidos, status, cancelamiento de pedidos, devoluciones. Tiene acceso a el pedido integralmente, datos de contacto del cliente, historico de comunicaciones._
+_Breve descripción de la empresa ficticia y del chatbot (a qué datos accede, qué acciones puede ejecutar)._
 
 ---
 
@@ -20,28 +19,25 @@ _Empresa de e-commerce de ropas. El chatbot puede acceder a informaciones de tra
 
 ### 1.1 Categoría de riesgo según el EU AI Act
 
-**Categoría:** _riesgo limitado_
+**Categoría:** _riesgo inaceptable | alto riesgo | riesgo limitado | riesgo mínimo_
 
 **Justificación (condicionada por el sector):**
-- Acceso a datos personales
-- Interactuan con personas
-- No está en infraestructura critica - context de e-commerce
-- Sin identificación biométrica
+
+_..._
 
 ### 1.2 Obligaciones y sanciones
 
 | Obligación | Qué implica para nuestro chatbot |
 |---|---|
-| _Informar que es una IA_ | _Por comunicarse con personar, necesita comunicar con transparencia_ |
-| _Acceso a datos personales_ | _Proteccione spor tener acceso a hsitorial, nombre, telefono, direccion_ |
+| _..._ | _..._ |
 
-**Sanciones máximas por incumplimiento (vigentes desde agosto de 2026):** _EU AI Act: Sanciones de hasta 35M€ o el 7% de la facturación anual._
+**Sanciones máximas por incumplimiento (vigentes desde agosto de 2026):** _..._
 
 ### 1.3 Principios del GDPR aplicables
 
-- **Base legal del tratamiento:** _Interes legitimo y concientimento claro._
-- **Minimización de datos:** _Solo acceder a datos necesarios, aplicar anonimizacion_
-- **Privacidad por diseño y por defecto:** _Control por OPT-IN, privacidad como MVP en el sistema_
+- **Base legal del tratamiento:** _..._
+- **Minimización de datos:** _..._
+- **Privacidad por diseño y por defecto:** _..._
 
 ---
 
@@ -49,33 +45,31 @@ _Empresa de e-commerce de ropas. El chatbot puede acceder a informaciones de tra
 
 ### 2.1 Los 3 riesgos más críticos (OWASP Top 10 for LLM Applications 2025)
 
-#### Riesgo 1 — _LLMXX: LLM accesible_
+#### Riesgo 1 — _LLMXX: nombre del riesgo_
 
-**Por qué es crítico para este chatbot:** _Utilizando LLMs de terceros, la responsabilidad es dividida entre el creador y el implementador._
+**Por qué es crítico para este chatbot:** _..._
 
-**Escenario de ataque concreto:** _Error o mal uso del creador de la LLM, expondo las informaciones. Con modelos locales, esto nos eria un problem, ya que seria de 100% control del implementador_
+**Escenario de ataque concreto:** _qué escribe el atacante, qué hace el sistema, qué se filtra o qué acción indebida se ejecuta._
 
-#### Riesgo 2 — _LLMXX: Anonimización de PII_
+#### Riesgo 2 — _LLMXX: nombre del riesgo_
 
-**Por qué es crítico:** _Puede permitir acceso a datos eprsonales y estafas_
+**Por qué es crítico:** _..._
 
-**Escenario de ataque concreto:** _Interceptacion de informacion con el envio para la LLM_
+**Escenario de ataque concreto:** _..._
 
-#### Riesgo 3 — _LLMXX: Retencion del provador_
+#### Riesgo 3 — _LLMXX: nombre del riesgo_
 
-**Por qué es crítico:** _Los termos del provador del modelo pueder cambiar_
+**Por qué es crítico:** _..._
 
-**Escenario de ataque concreto:** _El sistema muy anidado con el provedor puede bloquear osistema en caso de falla o quebra de los atos legales_
+**Escenario de ataque concreto:** _..._
 
 ### 2.2 Inventario de PII
 
 | Dato (PII) | Origen | ¿Necesario para responder? |
 |---|---|---|
-| _Nombre_ | _Pedido_ | _Si_ |
-| _Telefono_ | _Pedido_ | _No_ |
-| _Dirección_ | _Pedido_ | _Si_ |
+| _..._ | _..._ | _..._ |
 
-**Qué pasaría si estas conversaciones llegan sin filtrar al proveedor del LLM:** _Usuarios pueden tener sus datos expostos._
+**Qué pasaría si estas conversaciones llegan sin filtrar al proveedor del LLM:** _..._
 
 ---
 
@@ -83,11 +77,15 @@ _Empresa de e-commerce de ropas. El chatbot puede acceder a informaciones de tra
 
 | Dimensión | LLM comercial (cloud) | Modelo local (p. ej. Ollama + Qwen 2.5) |
 |---|---|---|
-| Coste | _x_ | __ |
-| Privacidad | __ | _x_ |
-| Cumplimiento | __ | _x_ |
-| Calidad | _x_ | _x_ |
+| Coste | _..._ | _..._ |
+| Privacidad | _..._ | _..._ |
+| Cumplimiento | _..._ | _..._ |
+| Calidad | _..._ | _..._ |
 
-**Recomendación final (coherente con el sector del Paso 0):** _Modelo local, para menor riesgo de conformidade con los actos y sin posibilidad de exponer datos a terceros._
+**Recomendación final (coherente con el sector del Paso 0):** _..._
 
 ---
+
+## 🟢 Bonus (opcional)
+
+_Anonimización con Presidio · Política de uso de IA (5 reglas) · LLM local con Ollama — incluye aquí el que hayas elegido._
